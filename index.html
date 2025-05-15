@@ -4,17 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iuliia Goriunova - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="script" href="tailwind.config.js">
    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-gray-900 font-[Open_Sans] ">
-  <header class="bg-white   max-w-4xl mx-auto ">
-    <div id="navbar" class="p-4 flex max-sm:block sm:justify-between">
-      <h1 class="text-2xl font-bold text-black max-sm:m-8 sm:m-0 "><a href="#">Iuliia Goriunova</a></h1>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="tailwind.css">
+   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   
+   </head>
+<body class="bg-white text-black-100 font-[Poppins] ">
+  <header class="bg-white   max-w-5xl mx-auto ">
+  <div id="navbar" class="p-8 flex max-sm:block sm:justify-between">
+      <h1 class="text-xl font-bold text-black  sm:m-0 "><a href="#">Iuliia Goriunova</a></h1>
     <div id="menu" class=" ">
-      <a href="#" class="text-black px-2 hover:underline">Case studies</a>
-      <a href="CV.html" class="text-black px-2 hover:underline">CV</a>
-      <a href="mailto:yulia.zuk.v@gmail.com" class="text-black px-2 hover:underline">yulia.zuk.v@gmail.com</a>
+      <a href="#" class="text-black pr-2  hover:underline hover:text-[#a26a00] menu-link">Case studies</a>
+      <a href="CV.html" class="text-black px-2 hover:underline hover:text-[#a26a00]">CV</a>
+      <a href="mailto:yulia.zuk.v@gmail.com" class="text-black sm:pl-2 hover:underline hover:text-[#a26a00]">yulia.zuk.v@gmail.com</a>
   </div>
 </div>
   </header>
@@ -31,35 +40,37 @@
 
 
 
-  <section id="about" class="max-w-4xl mx-auto ">
-   <div class="flex flex-col gap-4 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ..."> 
+  <section id="about" class="max-w-5xl mx-auto ">
+   <div class="flex flex-col gap-4 p-8 sm:flex-row sm:items-top sm:gap-12 sm:py-4 ..."> 
 
   <img class=" mx-auto block  rounded sm:mx-0 sm:w-1/3 max-sm:w-full sm:h-full  max-sm:h-56 max-sm:object-cover " src="img/iuliiag.gif" alt="" />
- <div class="space-y-2  sm:text-left">   
- <h2 class="text-4xl font-semibold mb-2 pb-4">UX/UI designer with an&nbsp;engineering mindset</h2>
-<p class="text-base leading-relaxed">I design straightforward, user-friendly interfaces, and I enjoy building things that make sense — for real people, not just portfolios.</p>
-ss B2C and B2B, product and marketing, in-house and as a contractor. And I still love the challenge of making complex things feel simple.</p>
+ <div class="space-y-2 w-full sm:w-2/3 sm:text-left content-start">   
+ <h2 class="md:text-[3.5rem]/[1.1] text-4xl  text-[#a26a00] font-bold mb-2 mt-4 pb-4">UX/UI designer with an engineering mindset</h2>
+<p class="text-xl leading-relaxed mb-2">I’m Iuliia, and I have over 9 years experience in web, desktop and mobile products in B2B and B2C, in-house and as a contractor. I also have an engineering degree and love climbing and water sports.</p>
 
-<p class="text-base leading-relaxed"> I started out in graphic design back in 2015, then moved into web design at Decathlon where I got into e-commerce and product thinking. Since then, I’ve worked on UI and UX across different teams — at ABBYY, as a contractor, and most recently at Blueface (Comcast Business).</p>
+<p class="text-xl leading-relaxed"> I’ve worked on UI and UX across different teams: at Decathlon, ABBYY, as a contractor in agency, at Blueface Comcast Business and most recently as a volunteer at Health&Help and on my own projects.</p>
 
-<p class="text-base leading-relaxed">Along the way, I picked up front-end skills like HTML, CSS, and a bit of Python, which helps me collaborate better with developers and bring ideas to life faster.</p>
 
-<p class="text-base leading-relaxed">I like clean design, clear structure, and solving small problems that make a big difference.</p>
 </div></div>
-<div class="mb-10 p-8">
-      <h2 class="text-xl font-semibold mb-4">What I Do</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white  rounded">
-          <h3 class="font-bold mb-1">UX/UI Design</h3>
-          <p class="text-sm">From wireframes to polished interfaces</p>
+<div class="mb-10 p-8 sm:p-14 sm:w-2/3 place-self-end w-full">
+      <h2 class="text-3xl font-bold mb-2 uppercase tracking-wide text-gold text-[#a26a00]">What I Do</h2>
+      <div class="mb-12 mt-4 bg-[#a26a00] h-[1px] w-full"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white   mb-6">
+          <h3 class="font-semibold text-xl mb-2">UX/UI Design</h3>
+          <p class="text-l">From wireframes to polished interfaces</p>
         </div>
-        <div class="bg-white  rounded">
-          <h3 class="font-bold mb-1">Front-End Friendly</h3>
-          <p class="text-sm">I speak HTML/CSS and know my way around dev tools</p>
+        <div class="bg-white   mb-6">
+          <h3 class="font-semibold text-xl mb-2 ">Front-End Friendly</h3>
+          <p class="text-l">I speak HTML/CSS and know my way around dev tools</p>
         </div>
-        <div class="bg-white  rounded">
-          <h3 class="font-bold mb-1">Team Player</h3>
-          <p class="text-sm">Comfortable working with devs, PMs, and other designers</p>
+        <div class="bg-white   mb-6">
+          <h3 class="font-semibold text-xl mb-2">Team Player</h3>
+          <p class="text-l">Comfortable working with devs, PMs, and other designers</p>
+        </div>
+        <div class="bg-white   mb-6">
+          <h3 class="font-semibold text-xl mb-2">Team Player</h3>
+          <p class="text-l">Comfortable working with devs, PMs, and other designers</p>
         </div>
       </div>
     </div>
