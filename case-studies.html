@@ -5,47 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iuliia Goriunova - Portfolio</title>
  
-  <link rel="script" href="tailwind.config.js">
-   <script src="https://cdn.tailwindcss.com"></script>
-   <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        gold: "#a26a00",
-                    },
-                },
-            },
-        }
-    </script>
-    
-   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="./output.css" rel="stylesheet">
 
+   
+  
 </head>
 
-<body class="bg-white text-black-100 font-[Poppins] ">
+<body class="bg-white text-black-100 font-Poppins ">
 
 
   <header class="bg-white   max-w-6xl mx-auto ">
+
     <div id="navbar" class="p-8 flex max-sm:block sm:justify-between">
-      <a href="index.html" class="text-xl font-bold text-black  sm:m-0 hover:text-gold">Iuliia Goriunova</a>
+      <a href="index.html" class="logo text-xl font-bold   sm:m-0 ">Iuliia Goriunova</a>
           <div id="menu" class=" ">
-            <span class=" pr-2  text-gold ">Case studies</span>
-            <a href="CV.pdf" target="_blank" class="text-black px-2 hover:underline hover:text-gold">CV</a>
-            <a href="mailto:yulia.zuk.v@gmail.com" class="text-black sm:pl-2 hover:underline hover:text-gold">yulia.zuk.v@gmail.com</a>
+            <span class="  menu-link-selected ">Case studies</span>
+            <a href="CV.pdf" target="_blank" class="menu-link">CV</a>
+            <a href="mailto:yulia.zuk.v@gmail.com" class="menu-link">yulia.zuk.v@gmail.com</a>
          </div>
     </div>
   </header>
 
   <section id="case studies" class="max-w-6xl mx-auto p-8 ">
- <h2 class="md:text-5xl text-4xl  text-gold font-bold mb-4 mt-4 pb-4">Case studies</h2>
+ <h2 class="md:text-5xl text-4xl  text-gold-100 font-bold mb-4 mt-4 pb-4">Case studies</h2>
     <div id="studies" class=" grid  md:grid-cols-3 gap-8">
         <div>
             <div class="mb-8">
-            <a href="case-studies/console.html" class="hover:underline hover:text-gold ">   
+            <a href="case-studies/console.html" class="hover:underline  ">   
              <img class=" mx-auto block  rounded sm:mx-0 w-full h-80 object-cover mb-4 hover:opacity-80" src="img/console.png" alt="" />
 
             <p class="text-l ">Call managing tool</p>
