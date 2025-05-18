@@ -353,6 +353,9 @@
       }
     }
   }
+ 
+    
+  
   .max-sm\:block {
     @media (width < 40rem) {
       display: block;
@@ -453,6 +456,10 @@
   }
 }
 @layer components {
+
+  .img-link:hover {
+    opacity: 0.8;
+  }
   ul {
     list-style-type: disc;
     padding-left: calc(var(--spacing) * 6);
