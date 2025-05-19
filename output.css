@@ -16,6 +16,7 @@
     --color-gold-100: #a26a00;
     --color-black: #444746;
     --color-white: #fff;
+    --color-grey: #E0E0E0;
     --spacing: 0.25rem;
     --container-6xl: 72rem;
     --text-sm: 0.875rem;
@@ -303,6 +304,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-grey {
+    background-color: var(--color-grey);
   }
   .object-cover {
     object-fit: cover;

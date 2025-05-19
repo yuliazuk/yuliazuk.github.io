@@ -68,80 +68,93 @@
 
       <div class=" sm:w-2/3">
         <h3 class="text-2xl   mt-4 pb-4">My role</h3>
-        <p class="text-xl font-light leading-relaxed mb-2">As a solo UX/UI designer collaborating with Business Analytics, we conducted a thorough review of the current processes and documentation. Based on these insights, I designed the core structure and essential functionality of the app.</p>
+        <p class="text-xl font-light leading-relaxed mb-2">As the UX designer for the project, I was responsible for researching and analysing user behaviour, designing and iterating navigation patterns, and ensuring a seamless and intuitive navigation experience within the telephony app while users were on a call.</p>
       </div>
   </div>
 
   <div class="mb-12">
-        <h3 class="text-2xl   mt-4 pb-4">Research</h3>
-        <p class="text-xl font-light leading-relaxed mb-4">We interviewed client and few controllers who was working the company. Our goal was to understand <b>what the current process. What information collected and how</b>.</p>
-        <h4 class="mt-8 mb-2 text-xl font-regular">Findings</h4>
-        <p class="text-xl font-light leading-relaxed mb-4">From the initial concepts, we determined that the solution would be a mobile or tablet app. During the interviews, we discovered that all controllers were provided with Android phones by the company for taking photos. Based on this insight, we decided to begin development with an Android version of the app.
-        </p>
+        <h3 class="text-2xl   mt-4 pb-4">Initial approach</h3>
+        <h4 class=" mt-8 mb-2 text-xl font-regular">Research</h4>
+        <ul >
+          <li class="mb-2 font-light text-xl">Compared native navigation patterns on different Android devices.</li>
+          <li class="mb-2 font-light text-xl">Reviewed iOS navigation patterns for reference.</li>
+        </ul>
+
+        <h4 class="  mt-8 mb-2 text-xl font-regular">Implementation</h4>
+        <ul >
+          <li class="mb-2 font-light text-xl">Tried various native Android navigation options.</li>
+           <ul class="mb-2"><li>Icon in the status bar</li><li>Fab button</li></ul>
+          <li class="mb-2 font-light text-xl">Conducted unmoderated user testing to gather feedback on each option on usertesting.com</li>
+
+        </ul>
+       
+ 
+    </div>
+
+     <div class="mb-12">
+        <h3 class="text-2xl   mt-4 pb-4">Findings</h3>
+        <p class="text-xl font-light leading-relaxed mb-4">While some users were only familiar with the first native navigation option and others with the second, all users struggled significantly when trying to use an option that was not familiar to them.
+        </br>
+This highlighted the need for a more universal and intuitive navigation solution.  </p>
        
  
     </div>
     </section>
-     <img class="  block  rounded sm:mx-0 w-full object-cover mb-12 " src="../img/site-map-issue.png" alt="Site map for issue managment app" />
-    <section id="case studies" class="max-w-4xl mx-auto p-8 ">
-     <div class="mb-12">
-        <h3 class="text-2xl   mt-4 pb-4">Challenges</h3>
-        <p class="text-xl font-light leading-relaxed mb-4">The main purpose of the app is to record issues identified on the construction site. This is centered around two key artifacts: the <b>issue</b> itself and the <b>facility where the issue occurred.</b>
-        </br>
-This added complexity, as the number of levels in a construction site could vary. However, the app needed to provide flexibility by allowing users to view issues across all levels or focus on specific issues at an individual level.
-        </p>
-       
- 
-    </div>
 
+     <img class="  block  rounded sm:mx-0 h-full object-cover mb-12 " src="../img/nav-app-options.jpg" alt="Oncall navigation - native options" />
 
+    <section id="page-contetn" class="max-w-4xl mx-auto p-8 ">
     <div class=" mb-10">
     
-        <h3 class="text-2xl   mt-4 pb-4">Functionality</h3>
-        <p class="text-xl font-light leading-relaxed mb-4">To ensure the MVP was functional, we defined and streamlined the core functionality.
-        </p>
-        <ul >
-          <li class="mb-2 font-light text-xl"><b>Viewing Construction Sites and Levels:</b> Users can view existing construction sites and their levels, with all data synced from the CRM. No ability to add new sites or levels within the app.</li>
-          <li class="mb-2 font-light text-xl"><b>Adding, Editing, and Viewing Issues:</b> Users can create, update, and review issues directly in the app.</li>
-          <li class="mb-2 font-light text-xl"><b>Analitics:</b> Insights into issues and site performance.</li>
-          <li class="mb-2 font-light text-xl"><b>Issue Statuses:</b> Tracking the progress of each issue through defined statuses.</li>
-          <li class="mb-2 font-light text-xl"><b>Notifications:</b> Alerts for updates or changes related to issues.</li>
-        </ul>
-      
+        <h3 class="text-2xl   mt-4 pb-4">Solution Iteration Process:</h3>
+
+        <ol >
+          <li class="mb-2 font-light text-xl"><b>User Feedback Analysis:</b> We thoroughly analyzed the feedback to understand why certain navigation patterns were problematic and identified common user pain points.</li>
+          <li class="mb-2 font-light text-xl"><b>Brainstorming Sessions:</b> Through collaborative sessions with developers and designers, we explored alternative solutions that prioritized user-centric design principles and cross-platform consistency.</li>
+          
+        </ol>
+        <img class="  block  mx-auto w-full object-cover mb-10 " src="../img/nav-app-decision.png" alt="Table showing that participant faled some tasks in both version depend on their previous experience" />
 
       </div>
+      <div class="flex flex-col sm:flex-row  mt-12 mb-12">
+    <div class="w-full  sm:w-1/3  mb-6">
+      <p class="text-5xl font-bold mb-2">3</p>
+      <p class="text-2xl">round of tests</p>
+    </div>
+    <div class="w-full sm:w-1/3 mb-6">
+      <p class="text-5xl font-bold  mb-2">15</p>
+      <p class="text-2xl">participants</p>
+    </div>
+    <div class="w-full sm:w-1/3  mb-6">
+      <p class="text-5xl font-bold mb-2">100%</p>
+      <p class="text-2xl">succses rate on final design</p>
+    </div>
+  </div>
+  
 
-      <div class="flex flex-col sm:flex-row gap-8">
-       <div class="mb-12 sm:w-1/2">
-        <h3 class="text-2xl   mt-4 pb-4">Designing Intuitive Navigation for Nested Structures</h3>
-        <p class="text-xl font-light leading-relaxed mb-4">To address the challenge of creating an intuitive and accessible interface for navigating a nested structure, I conducted benchmarking to explore how other apps handle complex navigation. One solution that stood out was Google Maps, which effectively balances a detailed, complex map with the ability to drill down into specific locations. </p>
+    <div class="mb-12">
+        <h3 class="text-2xl   mt-4 pb-4">Results</h3>
+        <p class="text-xl font-light leading-relaxed mb-4">The new navigation pattern was tested with a diverse group of users, and the feedback was overwhelmingly positive. Users found the new navigation intuitive and easy to use, leading to high satisfaction and successful task completion rates. The solution effectively improved the user experience across various Android devices, meeting the project's primary objective. </p>
         </div>
-        <video class="h-[250px] sm:w-1/2 rounded-lg mt-10 mb-10" controls>
-            <source
-                src="../img/google-map-interface.mp4"
-                type="video/mp4"
-            />
-             Your browser does not support the video tag.
-        </video>
-        </div>
-    
-    <img class="  block  rounded sm:mx-0 w-full object-cover mb-12 " src="../img/issue-managment-sketch.png" alt="Issue managment sketch" />
-
 
        <div class="mb-12">
-        <h3 class="text-2xl   mt-4 pb-4">What to Improve</h3>
-        <p class="text-xl font-light leading-relaxed mb-4">Testing the app in the field and gathering direct user feedback would have been crucial to identify any usability issues and refine the design further. This hands-on testing could have provided deeper insights into the user experience and allowed for more targeted improvements. </p>
+        <h3 class="text-2xl   mt-4 pb-4">Lessons Learned:</h3>
+        <p class="text-xl font-light leading-relaxed mb-4">The importance of user-centric design and thorough testing became evident.
+        </br>
+Flexibility and adaptability in design are crucial for apps with a diverse user base and varying experiences. </p>
         </div>
 
 
         <div class="mb-12">
-        <h3 class="text-2xl   mt-4 pb-4">Personal Outcome</h3>
-        <p class="text-xl font-light leading-relaxed mb-4">This project was a valuable experience, especially as a contractor with limited access to users and clients. It was fascinating to dive into a new domain, and I learned a lot about adapting my design approach to a unique context. As the sole designer on the project, I had the opportunity to handle all aspects of the design process, which helped me build confidence in my ability to work independently and make key design decisions. </p>
+        <h3 class="text-2xl   mt-4 pb-4">Future Recommendations:</h3>
+        <p class="text-xl font-light leading-relaxed mb-4">Continuously monitor user feedback to identify areas for ongoing improvements.
+        </br>
+Explore potential areas for further research or development to refine the navigation experience further. </p>
         </div>
 </section>
-
-    <img class="  block  rounded sm:mx-0 w-full object-cover mb-10 " src="../img/issue-final.png" alt="" />
-
+<div class="w-full mx-auto bg-grey">
+    <img class="  block  mx-auto h-full object-cover mb-10 " src="../img/nav-app-animation.gif" alt="Animation of how the new interface of calling look like" />
+</div>
  <section id="more-projects" class="max-w-4xl mx-auto p-8 ">
 
 <h2 class="section-h2 mt-12">More Projects</h2>
