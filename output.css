@@ -1,25 +1,27 @@
 /*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    --font-sans: 'Inter', 'Poppins', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --font-Inter: 'Inter', sans-serif;
     --font-Poppins: "Poppins", sans-serif;
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gold-100: #a26a00;
-    --color-black: #000;
+    --color-black: #444746;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-6xl: 72rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-xl--line-height: 1.5;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2.00 / 1.5);
     --text-3xl: 1.875rem;
@@ -27,6 +29,7 @@
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
+    --font-weight-regular: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
@@ -71,6 +74,7 @@
   h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
+    font-family: 'Poppins';
   }
   a {
     color: inherit;
@@ -118,6 +122,11 @@
   ol, ul, menu {
     list-style: none;
   }
+  li {
+    padding-bottom: calc(var(--spacing) * 2);
+    line-height: 1.5;
+  }
+
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
     vertical-align: middle;
@@ -322,6 +331,11 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-regular {
+    --tw-font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-regular);
+
+  }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
@@ -472,6 +486,10 @@
     padding-left: 32px;
     padding-right: 32px;
     color: var(--color-white);
+    font-family: "Poppins";
+  }
+  .logo {
+    font-family: "Poppins";
   }
   .logo:hover {
     text-decoration: none;
@@ -491,6 +509,7 @@
     font-size: var(--text-2xl);
     font-weight: var(--font-weight-semibold);
   }
+ 
   .menu-link-1st {
     margin-right: calc(var(--spacing) * 2);
     
