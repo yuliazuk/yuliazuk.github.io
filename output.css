@@ -552,14 +552,10 @@
     font-weight: var(--font-weight-semibold);
   }
  
-  .menu-link-1st {
-    margin-right: calc(var(--spacing) * 2);
-    
-    color: var(--color-black);
-  }
+  
   .menu-link {
-    margin-right: calc(var(--spacing) * 2);
-    margin-left: calc(var(--spacing) * 2);
+    margin-right: calc(var(--spacing) * 4);
+   
     color: var(--color-black);
   }
   .menu-link:hover, a:hover {
