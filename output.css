@@ -22,12 +22,14 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
     --text-xl--line-height: 1.5;
-    --text-2xl: 1.5rem;
+    --text-2xl: 1.55rem;
     --text-2xl--line-height: calc(2.00 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3.55rem;
+    --text-5xl--line-height: calc(3.5 / 2.25);
     --font-weight-light: 300;
     --font-weight-regular: 500;
     --font-weight-semibold: 600;
@@ -121,6 +123,7 @@
   }
   ol, ul, menu {
     list-style: none;
+    margin-bottom: calc(var(--spacing) * 10);
   }
   li {
     padding-bottom: calc(var(--spacing) * 2);
@@ -315,6 +318,14 @@
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -487,6 +498,7 @@
     padding-right: 32px;
     color: var(--color-white);
     font-family: "Poppins";
+    cursor:pointer;
   }
   .logo {
     font-family: "Poppins";
@@ -495,7 +507,9 @@
     text-decoration: none;
     color: var(--color-gold-100);
   }
+
   .btn:hover {
+    color: var(--color-white);
     background-color: var(--color-gold-100);
   }
   a:hover {
