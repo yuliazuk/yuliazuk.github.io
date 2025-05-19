@@ -78,6 +78,11 @@
     font-weight: inherit;
     font-family: 'Poppins';
   }
+  p {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Inter';
+  }
   a {
     color: inherit;
     -webkit-text-decoration: inherit;
@@ -128,6 +133,9 @@
   li {
     padding-bottom: calc(var(--spacing) * 2);
     line-height: 1.5;
+    margin-bottom: calc(var(--spacing) * 2);
+    font-weight: var(--font-weight-light) ;
+    font-size: var(--text-xl);
   }
 
   img, svg, video, canvas, audio, iframe, embed, object {
@@ -314,18 +322,22 @@
   .font-\[Poppins\] {
     font-family: Poppins;
   }
+  .font-\[Inter\] {
+    font-family: Inter;
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -391,6 +403,7 @@
       height: calc(var(--spacing) * 64);
     }
   }
+  
   .max-sm\:w-full {
     @media (width < 40rem) {
       width: 100%;
@@ -453,6 +466,11 @@
       padding: calc(var(--spacing) * 14);
     }
   }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .sm\:py-4 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 4);
@@ -468,6 +486,7 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  
     .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -477,6 +496,11 @@
     @media (width >= 48rem) {
       font-size: 3.5rem;
       line-height: 1.1;
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 }
