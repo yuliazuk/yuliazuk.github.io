@@ -551,7 +551,7 @@
     font-size: var(--text-2xl);
     font-weight: var(--font-weight-semibold);
   }
- 
+  
   
   .menu-link {
     margin-right: calc(var(--spacing) * 4);
@@ -562,13 +562,9 @@
     text-decoration: underline;
     color: var(--color-gold-100);
   }
-  .menu-link-1st-selected {
-    margin-right: calc(var(--spacing) * 2);
-    color: var(--color-gold-100);
-  }
+ 
   .menu-link-selected {
-    margin-right: calc(var(--spacing) * 2);
-    margin-left: calc(var(--spacing) * 2);
+    margin-right: calc(var(--spacing) * 4);
     color: var(--color-gold-100);
   }
   .section-h2 {
