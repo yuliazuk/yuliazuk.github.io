@@ -40,7 +40,7 @@
     --leading-relaxed: 1.625;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-gold-100: oklch(0.57 0.121468 72.9616);
+    
   }
 }
 @layer base {
@@ -177,6 +177,9 @@
       }
     }
   }
+
+  
+
   textarea {
     resize: vertical;
   }
@@ -397,6 +400,23 @@
       }
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+  img {
+    opacity: .85;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  
+  :root, :host {
+     --color-gold-100: #dfb64a;
+     --color-white: #282828;
+     --color-black: #e3e3e3;
+  }  
+ 
+}
  
     
   
@@ -579,7 +599,7 @@
   .menu-link {
     margin-right: calc(var(--spacing) * 4);
     padding-top: calc(var(--spacing) * 4);
-    color: var(--color-black);
+    
   }
   .menu-link:hover, a:hover {
     text-decoration: underline;
