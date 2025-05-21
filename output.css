@@ -401,7 +401,7 @@
     
   
   .max-sm\:block {
-    @media (width < 40rem) {
+    @media (width < 30rem) {
       display: block;
     }
   }
@@ -433,6 +433,7 @@
       object-position: right 32%;
     }
   }
+
 
           
   .sm\:m-0 {
@@ -568,11 +569,16 @@
     font-size: var(--text-2xl);
     font-weight: var(--font-weight-semibold);
   }
-  
+  .main-photo {
+    background-image: url(img/IuliiaG-p0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
   
   .menu-link {
     margin-right: calc(var(--spacing) * 4);
-   
+    padding-top: calc(var(--spacing) * 4);
     color: var(--color-black);
   }
   .menu-link:hover, a:hover {
