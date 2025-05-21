@@ -254,6 +254,9 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
+  .h-128 {
+    height: calc(var(--spacing) * 128);
+  }
   .h-\[1px\] {
     height: 1px;
   }
@@ -407,6 +410,13 @@
       height: calc(var(--spacing) * 64);
     }
   }
+
+  .max-sm\:h-80 {
+    @media (width < 40rem) {
+      height: calc(var(--spacing) * 80);
+    }
+  }
+  
   
   .max-sm\:w-full {
     @media (width < 40rem) {
@@ -418,6 +428,13 @@
       object-fit: cover;
     }
   }
+  .max-sm\:object-r32 {
+    @media (width < 40rem) {
+      object-position: right 32%;
+    }
+  }
+
+          
   .sm\:m-0 {
     @media (width >= 40rem) {
       margin: calc(var(--spacing) * 0);
